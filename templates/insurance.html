@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance - Request Queue</title>
+</head>
+<body>
+    <h1>Insurance - Request Queue</h1>
+    <div id="request-queue">
+        {% for request in requests %}
+            <div>
+                <p>Filename: {{ request.filename }}</p>
+                <p>Status: {{ request.status }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
